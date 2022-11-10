@@ -79,10 +79,6 @@ p {
   padding-bottom: 94px;
 }
 
-.activity__container {
-  text-align: center;
-}
-
 .activity__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -653,7 +649,7 @@ p {
   line-height: 1.7;
 }
 
-.logo-footer {
+.footer-logo {
   display: block;
   margin-bottom: 20px;
   outline: none;
@@ -666,7 +662,7 @@ p {
   font-style: normal;
 }
 
-.logo-footer__slogo {
+.footer-logo__slogo {
   color: var(--color-thirdary);
 }
 
@@ -788,15 +784,6 @@ p {
   color: var(--color-icon);
   -webkit-transition: border-color var(--color-hover-animation);
   transition: border-color var(--color-hover-animation);
-}
-
-.footer-form__input:focus {
-  border-color: var(--color-thirdary);
-  color: var(--color-icon);
-}
-
-.footer-form__input:hover {
-  border-color: var(--color-thirdary);
 }
 
 .footer-form__icon {
@@ -945,7 +932,6 @@ p {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
 .hero__canvas {
   margin: auto;
   display: -webkit-box;
@@ -961,7 +947,6 @@ p {
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../styles/icons/hero.jpg);
   background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../styles/icons/hero.jpg);
 }
-
 .hero__title {
   margin-top: 0px;
   margin-bottom: 30px;
@@ -974,10 +959,6 @@ p {
   margin: 0 auto 30px;
 }
 
-.logo__slog {
-  color: var(--color-thirdary);
-}
-
 .logo {
   color: var(--color-primary);
   font-family: "Raleway";
@@ -987,6 +968,9 @@ p {
   line-height: 1.2;
   font-style: normal;
   outline: none;
+}
+.logo__slog {
+  color: var(--color-thirdary);
 }
 
 .portfolio__button {

@@ -6,7 +6,7 @@
   font-size: 14px;
   line-height: 1.7;
 }
-.logo-footer {
+.footer-logo {
   display: block;
   margin-bottom: 20px;
   outline: none;
@@ -19,7 +19,7 @@
   font-style: normal;
 }
 
-.logo-footer__slogo {
+.footer-logo__slogo {
   color: var(--color-thirdary);
 }
 
@@ -116,13 +116,7 @@
   color: var(--color-icon);
   transition: border-color var(--color-hover-animation);
 }
-.footer-form__input:focus {
-  border-color: var(--color-thirdary);
-  color: var(--color-icon);
-}
-.footer-form__input:hover {
-  border-color: var(--color-thirdary);
-}
+
 
 .footer-form__icon {
   align-items: center;

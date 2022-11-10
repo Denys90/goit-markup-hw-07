@@ -5,9 +5,8 @@
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-}
 
-.hero__canvas {
+&__canvas {
   margin: auto;
   display: flex;
   align-items: center;
@@ -21,7 +20,7 @@
     url(../styles/icons/hero.jpg);
 }
 
-.hero__title {
+&__title {
   margin-top: 0px;
   margin-bottom: 30px;
 
@@ -33,3 +32,7 @@
   max-width: 696px;
   margin: 0 auto 30px;
 }
+
+}
+
+
