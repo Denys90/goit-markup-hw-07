@@ -14,7 +14,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
   </head>
   <body>
@@ -23,7 +24,7 @@
       <div class="container header__nav">
         <nav class="header__nav">
           <a class="logo" href="./index.html" lang="en"
-            ><span class="logoslog">Web</span>Studio</a
+            ><span class="logo__slog">Web</span>Studio</a
           >
 
           <ul class="header__list">
@@ -137,8 +138,8 @@
 
       <!-- Activity -->
       <section class="activity">
-        <div class="container second-section">
-          <h2 class="subtitle">Чим ми займаємося</h2>
+        <div class="container activity__container">
+          <h2 class="activity__subtitle">Чим ми займаємося</h2>
           <ul class="activity__list">
             <li class="activity__item">
               <div class="activity__thumb">
@@ -414,7 +415,7 @@
       <div class="container footer__position">
         <div>
           <a class="logo-footer" href="./index.html" lang="en"
-            ><span class="logoslog-footer">Web</span>Studio</a
+            ><span class="logo-footer__slogo">Web</span>Studio</a
           >
           <address>
             <ul class="footer__adresse-list">
@@ -441,7 +442,7 @@
           </address>
         </div>
         <div>
-          <h3 class="invitation">Приєднуйтесь</h3>
+          <h3 class="footer__invitation">Приєднуйтесь</h3>
           <ul class="footer__social-list">
             <li>
               <a class="footer__link" href="">
@@ -475,7 +476,7 @@
         </div>
         <form class="footer-form">
           <div>
-            <span class="invitation">Підпишіться на розсилку</span>
+            <span class="footer__invitation">Підпишіться на розсилку</span>
             <label class="visually-hidden" for="footer-form"> email</label>
             <input
               class="footer-form__input"
@@ -580,7 +581,9 @@
             >
           </div>
 
-          <button class="button backdrop__button" type="submit">Відправити</button>
+          <button class="button backdrop__submit-button" type="submit">
+            Відправити
+          </button>
         </form>
       </div>
     </div>

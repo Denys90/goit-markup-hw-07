@@ -1,0 +1,31 @@
+.benefist__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--color-light-gray);
+  border-radius: 4px;
+}
+
+.benefist {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.benefist__list {
+  display: flex;
+  gap: 30px;
+}
+.benefist__item {
+  width: calc((100% - 30px) / 4);
+}
+
+.benefist__list .benefist__item {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.benefist__item:nth-last-child(1) {
+  margin-right: 0px;
+}
