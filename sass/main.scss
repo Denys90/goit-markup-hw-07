@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./utils/base";
-@import "./utils/utils";
+@import "./utils/visually-hidden";
+
 
 @import "./components/activity";
 @import "./components/backdrop";
@@ -9,9 +10,10 @@
 @import "./components/container";
 @import "./components/cooperation";
 @import "./components/card-set";
+@import "./components/logo";
 @import "./components/footer";
+@import "./components/footer-form";
 @import "./components/header";
 @import "./components/hero";
-@import "./components/logo";
 @import "./components/portfolio";
 @import "./components/team";
