@@ -1,21 +1,40 @@
 .header {
   border-bottom: 1px solid #ececec;
 
+
   &__nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+   
   }
 
   &__list {
-    display: flex;
+    display: none;
     margin-left: 93px;
     gap: 50px;
+
+      @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__button-menu {
+    justify-content: flex-end;
+    @media (min-width: 768px) {
+      display: none;
+      
+    }
   }
 
   &__contact-list {
-    display: flex;
+    display: none;
     margin-left: auto;
     gap: 50px;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
   }
 
   &__link {
@@ -30,11 +49,11 @@
     line-height: 1.1;
     outline: none;
     transition: color var(--color-hover-animation);
-  }
 
-  &__link:hover,
+     &__link:hover,
   :focus {
     color: var(--color-thirdary);
+  }
   }
 
   &__adresse {
@@ -47,9 +66,8 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
-  }
 
-  &__adresse:hover {
+    &__adresse:hover {
     color: var(--color-thirdary);
   }
   &__adresse:hover &__icon {
@@ -59,6 +77,7 @@
 
   &__adresse:focus {
     color: var(--color-thirdary);
+  }
   }
 
   &__icon {
