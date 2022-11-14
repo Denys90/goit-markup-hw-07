@@ -29,15 +29,17 @@
 
 .mobile-menu__btn-close {
   border: none;
-
+position: absolute;
+top: 10px;
+right: 15px;
   background-color: var(--color-white-color);
 }
 
-// 123123123
 .mobile-menu {
   padding: 0;
   margin: 0;
   list-style: none;
+
 }
 
 .mobile-menu .link {

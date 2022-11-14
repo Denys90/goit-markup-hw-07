@@ -1,21 +1,12 @@
-@import "./utils/variables";
-@import "./utils/normalize";
-@import "./utils/base";
 @import "./utils/utils";
-@import "./utils/fonts";
 
-@import "./components/activity";
-@import "./components/backdrop";
-@import "./components/benefist";
-@import "./components/button";
-@import "./components/container";
-@import "./components/cooperation";
-@import "./components/card-set";
-@import "./components/footer";
-@import "./components/header";
-@import "./components/hero";
-@import "./components/logo";
-@import "./components/portfolio";
-@import "./components/team";
-@import "./components/menu-toggle";
-@import "./components/mobile-menu";
+@import "./components/components";
+
+@import "./layout/layout";
+
+
+
+
+
+
+
