@@ -13,8 +13,8 @@
     height: 70px;
     background: rgba(47, 48, 58, 0.8);
     overflow: hidden;
-
-    &-text {
+  }
+    &__tumb-text {
       margin: 27px;
       font-weight: 700;
       font-size: 14px;
@@ -24,7 +24,6 @@
       text-transform: uppercase;
       color: var(--color-white-color);
     }
-  }
   &__container {
     text-align: center;
   }
