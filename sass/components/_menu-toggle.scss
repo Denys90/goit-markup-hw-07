@@ -12,15 +12,15 @@
   cursor: pointer;
   border: none;
   outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
 }

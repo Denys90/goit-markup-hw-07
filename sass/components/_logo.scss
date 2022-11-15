@@ -1,6 +1,3 @@
-.logo__slog {
-  color: var(--color-thirdary);
-}
 .logo {
   color: var(--color-primary);
   font-family: "Raleway";
@@ -10,4 +7,8 @@
   line-height: 1.2;
   font-style: normal;
   outline: none;
+
+  &__slog {
+    color: var(--color-thirdary);
+  }
 }
