@@ -1245,7 +1245,7 @@ footer,
   -ms-flex-preferred-size: calc(100% - 30px)/2;
       flex-basis: calc(100% - 30px)/2;
 }
-.benefist__list__item:nth-last-child(1) {
+.benefist__list__item:nth-last-child(2) {
   margin-right: 0px;
 }
 .benefist__list .benefist__item {
