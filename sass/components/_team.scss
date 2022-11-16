@@ -1,49 +1,72 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background: var(--color-light-gray);
 
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
+
   &__list {
-    display: flex;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
 
     & .team__item {
+      display: inline-block;
+      margin-bottom: 30px;
+
       text-align: center;
-      margin-right: 30px;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
+
+      &-img {
+        @media screen and (min-width: 768px) {
+          width: 354px;
+        }
+        @media screen and (min-width: 1200px) {
+          width: 270px;
+          height: 260px;
+        }
+      }
     }
+
+    &__developer {
+      margin-bottom: 16px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.2;
+      letter-spacing: 0.03em;
+      color: var(--color-secondary);
+      @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.2;
+      }
+    }
+  }
+  &__social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
   }
   &__employee {
     background-color: var(--color-white-color);
     padding: 30px 20px;
   }
-  &__item:nth-child(4n) {
-    margin-right: 0px;
-  }
-  &__developer {
-    margin-bottom: 16px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: var(--color-secondary);
-  }
-
   &__name {
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-  }
 
-  &__social-list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.2;
+    }
   }
-
   &__link {
     width: 44px;
     height: 44px;

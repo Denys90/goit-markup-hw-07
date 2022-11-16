@@ -31,9 +31,42 @@ ul {
   clip-path: inset(50%);
   margin: -1px;
 }
+.feature-title {
+  font-weight: 700;
+font-size: 14px;
+line-height: 1.1px;
+
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-bottom: 10px;
+color: var(--color-primary);
+@media  screen and (max-width: 768px) {
+  text-align: center;
+}
+
+
+}
+section,
+header,
+footer,
+.backdrop {
+  display: none;
+}
+.block {
+  display: block;
+}
 .container {
-  margin: 0 auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }

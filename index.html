@@ -19,13 +19,12 @@
             ><span class="logo__slog">Web</span>Studio
           </a>
 
-          <!-- SB -->
-          <button data-modal-open
+          <button
+            data-modal-open
             class="menu-toggle"
             type="button"
             aria-expanded="false"
             aria-controls="mobile-menu"
-            
           >
             <svg width="40" height="40">
               <use href="./styles/icons/icons.svg#icon-burger-menu"></use>
@@ -66,16 +65,17 @@
         </ul>
       </div>
     </header>
+    -->
 
     <main>
-      <!-- <section class="hero hero__canvas">
+      <section class="hero hero__canvas">
         <div class="container">
           <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
           <button class="button" type="button" data-modal-open>Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="benefist">
+      <section class="benefist block">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
 
@@ -87,7 +87,9 @@
                 </svg>
               </div>
               <h3 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+              <p class="benefist__paragraph">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
             </li>
 
             <li class="benefist__item">
@@ -97,7 +99,9 @@
                 </svg>
               </div>
               <h3 class="feature-title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+              <p class="benefist__paragraph">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
             </li>
 
             <li class="benefist__item">
@@ -107,7 +111,9 @@
                 </svg>
               </div>
               <h3 class="feature-title">ПЛАНУВАННЯ</h3>
-              <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+              <p class="benefist__paragraph">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
             </li>
 
             <li class="benefist__item">
@@ -117,14 +123,16 @@
                 </svg>
               </div>
               <h3 class="feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+              <p class="benefist__paragraph">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Activity -->
-      <!-- <section class="activity">
+      <section class="activity">
         <div class="container activity__container">
           <h2 class="activity__subtitle">Чим ми займаємося</h2>
           <ul class="activity__list">
@@ -148,15 +156,21 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Team -->
-      <!-- <section class="team" lang="en">
+      <section class="team block" lang="en">
         <div class="container">
           <h2 class="activity__subtitle">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/img-1.jpg" alt="Ігор Дем'яненко" width="270" />
+              <img
+                class="team__item-img"
+                src="./images/img-1.jpg"
+                alt="Ігор Дем'яненко"
+                width="450"
+                height="460"
+              />
               <div class="team__employee">
                 <h3 class="team__name feature-title">Ігор Дем'яненко</h3>
                 <p class="team__developer">Product Designer</p>
@@ -193,7 +207,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img-2.jpg" alt="Ольга Рєпіна" width="270" />
+              <img
+                class="team__item-img"
+                src="./images/img-2.jpg"
+                alt="Ольга Рєпіна"
+                width="450"
+                height="460"
+              />
               <div class="team__employee">
                 <h3 class="team__name feature-title">Ольга Рєпіна</h3>
                 <p class="team__developer">Frontend Developer</p>
@@ -230,7 +250,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img-3.jpg" alt="Микола Тарасов" width="270" />
+              <img
+                class="team__item-img"
+                src="./images/img-3.jpg"
+                alt="Микола Тарасов"
+                width="450"
+                height="460"
+              />
               <div class="team__employee">
                 <h3 class="team__name feature-title">Микола Тарасов</h3>
                 <p class="team__developer">Marketing</p>
@@ -267,7 +293,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img-4.jpg" alt="Михайло Єрмаков" width="270" />
+              <img
+                class="team__item-img"
+                src="./images/img-4.jpg"
+                alt="Михайло Єрмаков"
+                width="450"
+                height="460"
+              />
               <div class="team__employee">
                 <h3 class="team__name feature-title">Михайло Єрмаков</h3>
                 <p class="team__developer">UI Designer</p>
@@ -305,10 +337,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Coopertion -->
-      <!-- <section class="coopertion">
+      <section class="coopertion block">
         <div class="container">
           <h2 class="activity__subtitle">Постійні клієнти</h2>
           <ul class="coopertion__list">
@@ -356,11 +388,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      
+      </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__position">
         <div>
           <a class="footer__logo" href="./index.html" lang="en"
@@ -442,11 +473,10 @@
           </button>
         </form>
       </div>
-    </footer> -->
-    -->
+    </footer>
 
     <!--------------Modal------------->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="backdrop__modal">
         <button class="backdrop__button" type="button" data-modal-close>
           <svg width="18" height="18">
@@ -507,9 +537,7 @@
             placeholder="Введіть текст"
           ></textarea>
 
-          <!-- LABEL -->
-
-          <!-- <div class="backdrop__checkbox">
+          <div class="backdrop__checkbox">
             <input
               class="backdrop__checkbox-input visually-hidden"
               type="checkbox"
@@ -528,12 +556,12 @@
 
           <button class="button backdrop__submit-button" type="submit">Відправити</button>
         </form>
-      </div> -->
-    </div> -->
+      </div>
+    </div>
 
     <!-- Mobile modal -->
 
-    <div class="mobile__backdrop is-hidden" data-modal>
+    <!-- <div class="mobile__backdrop is-hidden" data-modal>
       <div class="mobile__modal">
         <button class="mobile-menu__btn-close" type="button" data-modal-close>
           <svg class="mobile-menu__icon" width="18.67" height="18.67">
@@ -578,7 +606,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
   </body>

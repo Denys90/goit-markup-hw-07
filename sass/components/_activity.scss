@@ -14,16 +14,16 @@
     background: rgba(47, 48, 58, 0.8);
     overflow: hidden;
   }
-    &__tumb-text {
-      margin: 27px;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.1;
-      text-align: center;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: var(--color-white-color);
-    }
+  &__tumb-text {
+    margin: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-white-color);
+  }
   &__container {
     text-align: center;
   }
@@ -40,12 +40,20 @@
   &__subtitle {
     text-align: center;
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
     color: var(--color-primary);
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.2;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.16;
+    }
   }
 }

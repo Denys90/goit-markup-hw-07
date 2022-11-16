@@ -1,13 +1,26 @@
 .coopertion {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+@media screen and (min-width: 1200px) {
+   padding-top: 94px;
   padding-bottom: 94px;
+}
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
   }
   &__item {
-    width: calc((100% - 30px) / 6);
+    width: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 150px) / 6);
+    }
   }
   &__icon {
     fill: currentcolor;
