@@ -20,6 +20,6 @@
     if (!e.matches) return;
     mobileMenu.classList.remove("is-open");
     openMenuBtn.setAttribute("aria-expanded", false);
-    wrapper.classList.classList.remove("lock");
+    wrapper.classList.remove("lock");
   });
 })();

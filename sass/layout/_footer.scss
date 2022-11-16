@@ -1,5 +1,4 @@
 .footer {
-  display: none;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--color-background);
@@ -11,19 +10,17 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+
+    @media screen and (max-width: 1200px) {
+     flex-direction: column;
+     gap: 60px;
+     align-items: center;
+     text-align: center;
+    }
   }
 
   &__logo {
-    display: block;
-    margin-bottom: 20px;
-    outline: none;
     color: var(--color-white-color);
-    font-family: "Raleway";
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    font-style: normal;
   }
 
   &__slogo {

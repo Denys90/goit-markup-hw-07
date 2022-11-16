@@ -16,6 +16,9 @@
       transform: translateX(0);
     }
   }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }
 .mobile-menu__btn-close {
   position: absolute;
@@ -30,7 +33,7 @@
   top: 0;
   left: 0;
   padding: 48px 40px;
-  height: auto;
+  height: 100%;
   width: 100%;
   transform: translate(100%);
   z-index: 999;
@@ -38,6 +41,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform var(--color-hover-animation);
+  overflow-y: auto;
 }
 .mobile-menu__btn-close {
   position: absolute;
@@ -90,6 +94,7 @@
 .mobile-menu__socials {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .mobile-menu__socials-link {

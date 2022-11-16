@@ -11,20 +11,17 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <!-- Header -->
     <header class="header">
       <div class="container header__nav">
         <nav class="header__nav">
           <a class="logo" href="./index.html" lang="en"
             ><span class="logo__slog">Web</span>Studio
           </a>
-
           <button class="menu-toggle" type="button" aria-expanded="false" data-open-menu>
             <svg width="40" height="40">
               <use href="./styles/icons/icons.svg#icon-burger-menu"></use>
             </svg>
           </button>
-
           <ul class="navigation">
             <li>
               <a class="navigation__link current" href="#">Студія</a>
@@ -43,7 +40,6 @@
               <svg class="header__icon" width="16" height="12">
                 <use href="./styles/icons/icons.svg#icon-mail"></use>
               </svg>
-
               info@devstudio.com
             </a>
           </li>
@@ -52,14 +48,12 @@
               <svg class="header__icon" width="10" height="16">
                 <use href="./styles/icons/icons.svg#icon-smartphone"></use>
               </svg>
-
               +38 096 111 11 11
             </a>
           </li>
         </ul>
       </div>
     </header>
-
     <main>
       <section class="hero hero__canvas">
         <div class="container">
@@ -67,11 +61,9 @@
           <button class="button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
-
       <section class="benefist block">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
-
           <ul class="benefist__list">
             <li class="benefist__item">
               <div class="benefist__icon">
@@ -84,7 +76,6 @@
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-
             <li class="benefist__item">
               <div class="benefist__icon">
                 <svg width="70" height="70">
@@ -96,7 +87,6 @@
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-
             <li class="benefist__item">
               <div class="benefist__icon">
                 <svg width="70" height="70">
@@ -108,7 +98,6 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-
             <li class="benefist__item">
               <div class="benefist__icon">
                 <svg width="70" height="70">
@@ -123,8 +112,6 @@
           </ul>
         </div>
       </section>
-
-      <!-- Activity -->
       <section class="activity">
         <div class="container activity__container">
           <h2 class="activity__subtitle">Чим ми займаємося</h2>
@@ -150,8 +137,6 @@
           </ul>
         </div>
       </section>
-
-      <!-- Team -->
       <section class="team block" lang="en">
         <div class="container">
           <h2 class="activity__subtitle">Наша команда</h2>
@@ -331,8 +316,6 @@
           </ul>
         </div>
       </section>
-
-      <!-- Coopertion -->
       <section class="coopertion block">
         <div class="container">
           <h2 class="activity__subtitle">Постійні клієнти</h2>
@@ -383,11 +366,10 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="container footer__position">
         <div>
-          <a class="footer__logo" href="./index.html" lang="en"
+          <a class="logo footer__logo" href="./index.html" lang="en"
             ><span class="footer__slogo">Web</span>Studio</a
           >
           <address>
@@ -457,7 +439,6 @@
               placeholder="E-mail"
             />
           </div>
-
           <button class="button subscribe-form__button" type="submit">
             Підписатися
             <svg class="subscribe-form__icon" width="24" height="24">
@@ -467,8 +448,6 @@
         </form>
       </div>
     </footer>
-
-    <!--------------Modal------------->
     <div class="backdrop is-hidden" data-modal>
       <div class="backdrop__modal">
         <button class="backdrop__button" type="button" data-modal-close>
@@ -478,10 +457,10 @@
         </button>
         <form action="a" lang="uk">
           <span class="backdrop__form-title">Залиште свої дані, ми вам передзвонимо</span>
-
           <label class="backdrop__label" for="user_name"> Ім'я </label>
           <div class="backdrop__control">
             <input
+              required
               class="backdrop__input"
               type="text"
               name="user_name"
@@ -492,10 +471,10 @@
               <use href="./styles/icons/icons.svg#icon-modalka-person"></use>
             </svg>
           </div>
-
           <label class="backdrop__label" for="user_tel"> Телефон </label>
           <div class="backdrop__control">
             <input
+              required
               class="backdrop__input"
               type="tel"
               name="user_tel"
@@ -507,10 +486,10 @@
               <use href="./styles/icons/icons.svg#icon-modalka-phon"></use>
             </svg>
           </div>
-
           <label class="backdrop__label" for="user_email"> Пошта </label>
           <div class="backdrop__control">
             <input
+              required
               class="backdrop__input"
               type="email"
               name="user_email"
@@ -521,7 +500,6 @@
               <use href="./styles/icons/icons.svg#icon-modalka-email"></use>
             </svg>
           </div>
-
           <label class="backdrop__label" for="comment"> Коментар </label>
           <textarea
             class="backdrop__textarea"
@@ -529,7 +507,6 @@
             id="comment"
             placeholder="Введіть текст"
           ></textarea>
-
           <div class="backdrop__checkbox">
             <input
               class="backdrop__checkbox-input visually-hidden"
@@ -546,14 +523,10 @@
               >Погоджуюся з розсилкою та приймаю <a href="#"> Умови договору </a></label
             >
           </div>
-
           <button class="button backdrop__submit-button" type="submit">Відправити</button>
         </form>
       </div>
     </div>
-
-    <!-- Mobile modal -->
-
     <div class="mobile__backdrop" data-menu-container>
       <div class="mobile__modal">
         <button class="mobile-menu__btn-close" type="button" data-close-menu>

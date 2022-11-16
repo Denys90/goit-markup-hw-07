@@ -2,6 +2,15 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  grid-area: 12px;
+
+  @media screen and(max-width: 1200px) {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+
+  }
 
   &__input {
     width: 358px;
@@ -24,14 +33,13 @@
   &__button {
     display: flex;
     padding: 10px 28px;
-    margin-left: 12px;
   }
 
   &__input:hover,
   &__input:focus {
     border-color: var(--color-thirdary);
   }
-  &__title{
+  &__title {
     display: block;
     margin-bottom: 20px;
     color: var(--color-white-color);
