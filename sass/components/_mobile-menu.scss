@@ -1,4 +1,6 @@
 .mobile__backdrop {
+  visibility: hidden;
+  pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -7,24 +9,40 @@
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
   transition: opacity var(--color-hover-animation), visibility var(--color-hover-animation);
+  &.is-open {
+    visibility: visible;
+    pointer-events: all;
+    .mobile__modal {
+      transform: translateX(0);
+    }
+  }
+}
+.mobile-menu__btn-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .mobile__modal {
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
+  padding: 48px 40px;
   height: auto;
-  width: 100vw;
+  width: 100%;
   transform: translate(100%);
   z-index: 999;
   background-color: var(--color-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform var(--color-hover-animation);
 }
 .mobile-menu__btn-close {
   position: absolute;
+  width: 40px;
+  height: 40px;
   top: 10px;
   right: 15px;
   border: none;

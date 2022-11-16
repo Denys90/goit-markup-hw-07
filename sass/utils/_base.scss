@@ -33,28 +33,18 @@ ul {
 }
 .feature-title {
   font-weight: 700;
-font-size: 14px;
-line-height: 1.1px;
+  font-size: 14px;
+  line-height: 1.1px;
 
-letter-spacing: 0.03em;
-text-transform: uppercase;
-margin-bottom: 10px;
-color: var(--color-primary);
-@media  screen and (max-width: 768px) {
-  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
 
-
-}
-section,
-header,
-footer,
-.backdrop {
-  display: none;
-}
-.block {
-  display: block;
-}
 .container {
   padding: 0 15px;
 
