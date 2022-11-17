@@ -4,18 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Portfolio</title>
   </head>
   <body>
     <header class="header">
@@ -24,25 +16,26 @@
           <a class="logo" href="./index.html" lang="en"
             ><span class="logo__slog">Web</span>Studio</a
           >
-
-          <ul class="header__list">
+          <button class="menu-toggle" type="button" aria-expanded="false" data-open-menu>
+            <svg width="40" height="40">
+              <use href="./styles/icons/icons.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
+          <ul class="navigation">
             <li>
-              <a class="header__link" href="./index.html">Студія</a>
+              <a class="navigation__link" href="./index.html">Студія</a>
             </li>
             <li>
-              <a class="header__link header__current" href="#">Портфоліо</a>
+              <a class="navigation__link current" href="#">Портфоліо</a>
             </li>
             <li>
-              <a class="header__link" href="#">Контакти</a>
+              <a class="navigation__link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="header__contact-list">
           <li>
-            <a
-              class="header__adresse header__link"
-              href="mailto:info@devstudio.com"
-            >
+            <a class="header__adresse header__link" href="mailto:info@devstudio.com">
               <svg class="header__icon" width="16" height="12">
                 <use href="./styles/icons/icons.svg#icon-mail"></use>
               </svg>
@@ -95,15 +88,14 @@
                       width="370"
                     />
                     <p class="card-set__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                   <div class="card-set__meta">
                     <h3 class="card-set__name">Технокряк</h3>
-                    <p>Веб-сайт</p>
+                    <p class="card-set__paragraph">Веб-сайт</p>
                   </div>
                 </a>
               </article>
@@ -119,17 +111,14 @@
                       width="370"
                     />
                     <p class="card-set__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                   <div class="card-set__meta">
-                    <h3 class="card-set__name">
-                      Постер New Orlean vs Golden Star
-                    </h3>
-                    <p>Дизайн</p>
+                    <h3 class="card-set__name">Постер New Orlean vs Golden Star</h3>
+                    <p class="card-set__paragraph">Дизайн</p>
                   </div>
                 </a>
               </article>
@@ -138,22 +127,16 @@
               <article class="card-set">
                 <a class="card-set__link" href="#"
                   ><div class="card-set__overlay">
-                    <img
-                      class="card-set__image"
-                      src="./images/img3.jpg"
-                      alt="Риба"
-                      width="370"
-                    />
+                    <img class="card-set__image" src="./images/img3.jpg" alt="Риба" width="370" />
                     <p class="card-set__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                   <div class="card-set__meta">
                     <h3 class="card-set__name">Ресторан Seafood</h3>
-                    <p>Додаток</p>
+                    <p class="card-set__paragraph">Додаток</p>
                   </div></a
                 >
               </article>
@@ -169,15 +152,14 @@
                       width="370"
                     />
                     <p class="card-set__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                   <div class="card-set__meta">
                     <h3 class="card-set__name">Проєкт Prime</h3>
-                    <p>Маркетинг</p>
+                    <p class="card-set__paragraph">Маркетинг</p>
                   </div></a
                 >
               </article>
@@ -193,15 +175,14 @@
                       width="370"
                     />
                     <p class="card-set__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                   <div class="card-set__meta">
                     <h3 class="card-set__name">Проєкт Boxes</h3>
-                    <p>Додаток</p>
+                    <p class="card-set__paragraph">Додаток</p>
                   </div></a
                 >
               </article>
@@ -217,15 +198,14 @@
                       width="370"
                     />
                     <p class="card-set__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                   <div class="card-set__meta">
                     <h3 class="card-set__name">Inspiration has no Borders</h3>
-                    <p>Веб-сайт</p>
+                    <p class="card-set__paragraph">Веб-сайт</p>
                   </div></a
                 >
               </article>
@@ -234,22 +214,16 @@
               <article class="card-set">
                 <a class="card-set__link" href="#"
                   ><div class="card-set__overlay">
-                    <img
-                      class="card-set__image"
-                      src="./images/img7.jpg"
-                      alt="Журнал"
-                      width="370"
-                    />
+                    <img class="card-set__image" src="./images/img7.jpg" alt="Журнал" width="370" />
                     <p class="card-set__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                   <div class="card-set__meta">
                     <h3 class="card-set__name">Дизайн</h3>
-                    <p>Дизайн</p>
+                    <p class="card-set__paragraph">Дизайн</p>
                   </div></a
                 >
               </article>
@@ -258,22 +232,16 @@
               <article class="card-set">
                 <a class="card-set__link" href="#"
                   ><div class="card-set__overlay">
-                    <img
-                      class="card-set__image"
-                      src="./images/img8.jpg"
-                      alt="Бірка"
-                      width="370"
-                    />
+                    <img class="card-set__image" src="./images/img8.jpg" alt="Бірка" width="370" />
                     <p class="card-set__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                   <div class="card-set__meta">
                     <h3 class="card-set__name">Проєкт LAB</h3>
-                    <p>Маркетинг</p>
+                    <p class="card-set__paragraph">Маркетинг</p>
                   </div></a
                 >
               </article>
@@ -289,15 +257,14 @@
                       width="370"
                     />
                     <p class="card-set__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                   <div class="card-set__meta">
                     <h3 class="card-set__name">Growing Business</h3>
-                    <p>Додаток</p>
+                    <p class="card-set__paragraph">Додаток</p>
                   </div></a
                 >
               </article>
@@ -309,7 +276,7 @@
     <footer class="footer">
       <div class="container footer__position">
         <div>
-          <a class="footer__logo" href="./index.html" lang="en"
+          <a class="logo footer__logo" href="./index.html" lang="en"
             ><span class="footer__slogo">Web</span>Studio</a
           >
           <address>
@@ -329,9 +296,7 @@
                 >
               </li>
               <li class="footer__adresse-item">
-                <a class="footer__adresse-link" href="tel:+380961111111">
-                  +38 096 111 11 11</a
-                >
+                <a class="footer__adresse-link" href="tel:+380961111111"> +38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -391,5 +356,49 @@
         </form>
       </div>
     </footer>
+    <div class="mobile__backdrop" data-menu-container>
+      <div class="mobile__modal">
+        <button class="mobile-menu__btn-close" type="button" data-close-menu>
+          <svg class="mobile-menu__icon" width="18.67" height="18.67">
+            <use href="./styles/icons/icons.svg#icon-invis-btn"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu">
+          <nav class="mobile-menu__navigation">
+            <ul>
+              <li>
+                <a class="mobile-menu__link" href="./index.html">Студія</a>
+              </li>
+              <li>
+                <a class="mobile-menu__link mobile-menu__link--current" href="#"> Портфоліо </a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#"> Контакти </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="mobile-menu__contacts-link-tel" href="tel:+380961111111"> +38 096 111 11 11 </a>
+          <a class="mobile-menu__contacts-link-email" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+          <ul class="mobile-menu__socials">
+            <li>
+              <a class="mobile-menu__socials-link" href="#">Instagram</a>
+            </li>
+            <li>
+              <a class="mobile-menu__socials-link" href="#">Twitter</a>
+            </li>
+            <li>
+              <a class="mobile-menu__socials-link" href="#">Facebook</a>
+            </li>
+            <li>
+              <a class="mobile-menu__socials-link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

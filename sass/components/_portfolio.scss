@@ -29,12 +29,19 @@
   }
   &__list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      align-items: center;
+      justify-content: center;
+       margin-bottom: 50px;
+    }
   }
 
   &__list .portfolio__item {
     margin-right: 8px;
+    margin-bottom: 15px;
   }
   &__list .portfolio__item:nth-last-child(1) {
     margin-right: 0px;

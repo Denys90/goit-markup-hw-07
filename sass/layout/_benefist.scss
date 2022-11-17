@@ -1,4 +1,5 @@
 .benefist {
+  display: inline-flex;
   padding-top: 60px;
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -15,23 +16,20 @@
     border-radius: 4px;
   }
   &__list {
-    display: block;
-    @media screen and (min-width: 768px) {
-      display: inline-flex;
-    }
+    display: flex;
 
     &__item {
-      flex-basis: calc(100% - 30px) / 2;
+      flex-basis: calc((100% - 60px) / 2);
     }
-    &__item:nth-last-child(2) {
+    &__item:nth-last-child(4) {
       margin-right: 0px;
     }
   }
   &__list .benefist__item {
     width: 100%;
     margin-right: 30px;
-   @media screen and (min-width: 768px) {
-   }
+    @media screen and (min-width: 768px) {
+    }
   }
   &__paragraph {
     font-size: 14px;
