@@ -934,6 +934,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 12px;
   padding: 10px 28px;
 }
 .subscribe-form__input:hover, .subscribe-form__input:focus {
