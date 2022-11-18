@@ -1,5 +1,5 @@
 .benefist {
-  display: inline-flex;
+  
   padding-top: 60px;
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -16,20 +16,27 @@
     border-radius: 4px;
   }
   &__list {
-    display: flex;
-
-    &__item {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+  &__item {
+    @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 60px) / 2);
     }
-    &__item:nth-last-child(4) {
-      margin-right: 0px;
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 90px) / 4);
+    }
+    &:not(:last-child) {
+      @media screen and (max-width: 767.98px) {
+        margin-bottom: 30px;
+      }
     }
   }
   &__list .benefist__item {
     width: 100%;
-    margin-right: 30px;
-    @media screen and (min-width: 768px) {
-    }
   }
   &__paragraph {
     font-size: 14px;
