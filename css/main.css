@@ -11,6 +11,7 @@
   --color-shadow-card: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   --color-hover-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --hero-overlay: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   --font-roboto: "Roboto", sans-serif;
   --font-raleway: "Raleway";
 }
@@ -616,6 +617,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -623,8 +627,18 @@ ul {
   color: var(--color-primary);
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.1;
+  line-height: 1.5;
   letter-spacing: 0.03em;
+  width: 370px;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .backdrop__form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+  }
 }
 .backdrop .backdrop__checkbox {
   position: relative;
@@ -785,19 +799,53 @@ ul {
   }
 }
 .hero__canvas {
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 1600px;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../styles/icons/hero.jpg);
-  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../styles/icons/hero.jpg);
+  padding: 118px 0;
+  background-image: var(--hero-overlay), url(../images/header-mobile-450.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__canvas {
+    background-image: var(--hero-overlay), url(../images/header-mobile-900.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__canvas {
+    background-image: var(--hero-overlay), url(../images/header-tablet-354.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--hero-overlay), url(../images/header-tablet-708.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 1600px;
+    background-image: var(--hero-overlay), url(../images/header-desktop-1600.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--hero-overlay), url(../images/header-desktop-3200.jpg);
+  }
 }
 .hero__title {
   color: var(--color-white-color);

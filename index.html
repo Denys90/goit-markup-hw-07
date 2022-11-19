@@ -119,19 +119,60 @@
               <div class="activity__thumb">
                 <p class="activity__tumb-text">Десктопні додатки</p>
               </div>
-              <img class="img" src="./images/box1.jpg" width="370" alt="Розмітка сайту!" />
+              <picture>
+                <source
+                  srcset="./images/box1.webp 1x, ./images/box1-900.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  srcset="./images/box1.jpg x1,
+                  ./images/box1-900.jpg x2"
+                  type="image/jpg"
+                  class="img"
+                  src="./images/box1.jpg"
+                  width="370"
+                  alt="Розмітка сайту!"
+                />
+              </picture>
             </li>
             <li class="activity__item">
               <div class="activity__thumb">
                 <p class="activity__tumb-text">Мобільні додатки</p>
               </div>
-              <img class="img" src="./images/box2.jpg" width="370" alt="Підтримка девайсів!" />
+              <picture>
+                <source
+                  srcset="./images/box2.webp x1, ./images/box2-900.webp x2"
+                  type="image/webp"
+                />
+                <img
+                  srcset="./images/box2.jpg 1x, ./images/box2-900.jpg 2x"
+                  type="image/jpg"
+                  class="img"
+                  src="./images/box2.jpg"
+                  width="370"
+                  alt="Підтримка девайсів!"
+                />
+              </picture>
             </li>
             <li class="activity__item">
               <div class="activity__thumb">
                 <p class="activity__tumb-text">Дизайнерські рішення</p>
               </div>
-              <img class="img" src="./images/box3.jpg" width="370" alt="Колористика" />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                ./images/box3.webp x1,
+                ./images/box3-900.webp 2x"
+                />
+                <img
+                  class="img"
+                  srcset="./images/box3.jpg 1x, ./images/box3-900.jpg 2x"
+                  src="./images/box3.jpg"
+                  type="image/jpg"
+                  alt="Колористика"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -141,13 +182,62 @@
           <h2 class="activity__subtitle">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__item-img"
-                src="./images/img-1.jpg"
-                alt="Ігор Дем'яненко"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+              ./images/mobile/produkt-designer-450.webp x1,
+                ./images/mobile/produkt-designer-900.webp x2,
+                ./images/mobile/produkt-designer-1350.webp x3"
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+              ./images/mobile/produkt-designer-450.jpg x1,
+                ./images/mobile/produkt-designer-900.jpg x2,
+                ./images/mobile/produkt-designer-1350.jpg x3"
+                  type="i
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+              ./images/tablet/produkt-designer-354.webp x1,
+                ./images/tablet/produkt-designer-708.webp x2,
+                ./images/tablet/produkt-designer-1062.webp x3"
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+              ./images/tablet/produkt-designer-354.jpg x1,
+                ./images/tablet/produkt-designer-708.jpg x2,
+                ./images/tablet/produkt-designer-1062.jpg x3"
+                  type="image/jpg"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                 ./images/desktop/produkt-designer-270.jpg x1,
+                ./images/desktop/produkt-designer-540.jpg x2,
+                ./images/desktop/produkt-designer-810.jpg x3"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                  ./images/desktop/produkt-designer-270.jpg x1,
+                ./images/desktop/produkt-designer-540.jpg x2,
+                ./images/desktop/produkt-designer-810.jpg x3"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="team__item-img"
+                  src="./images/desktop/produkt-designer-270.jpg"
+                  alt="Продукт дизайнер"
+                />
+              </picture>
+
               <div class="team__employee">
                 <h3 class="team__name feature-title">Ігор Дем'яненко</h3>
                 <p class="team__developer">Product Designer</p>
@@ -184,13 +274,68 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__item-img"
-                src="./images/img-2.jpg"
-                alt="Ольга Рєпіна"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/front-dev-450.webp  1x,
+                    ./images/mobile/front-dev-900.webp  2x,
+                    ./images/mobile/front-dev-1350.webp 3x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/front-dev-450.jpg  1x,
+                    ./images/mobile/front-dev-900.jpg  2x,
+                    ./images/mobile/front-dev-1350.jpg 3x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/front-dev-354.webp  1x,
+                    ./images/tablet/front-dev-708.webp  2x,
+                    ./images/tablet/front-dev-1062.webp 3x
+                  "
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/front-dev-354.jpg  1x,
+                    ./images/tablet/front-dev-708.jpg  2x,
+                    ./images/tablet/front-dev-1062.jpg 3x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/front-dev-270.webp 1x,
+                    ./images/desktop/front-dev-540.webp 2x,
+                    ./images/desktop/front-dev-810.webp 3x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/front-dev-270.jpg 1x,
+                    ./images/desktop/front-dev-540.jpg 2x,
+                    ./images/desktop/front-dev-810.jpg 3x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="team__item-img"
+                  type="image/jpg"
+                  src="./images/mobile/front-dev-450.jpg"
+                  alt="веб-розробник"
+                />
+              </picture>
               <div class="team__employee">
                 <h3 class="team__name feature-title">Ольга Рєпіна</h3>
                 <p class="team__developer">Frontend Developer</p>
@@ -227,13 +372,68 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__item-img"
-                src="./images/img-3.jpg"
-                alt="Микола Тарасов"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/marketing-450.webp   1x,
+                    ./images/mobile/marketing-900.webp   2x,
+                    ./images//mobile/marketing-1350.webp 3x
+                  "
+                  type="image/webp"
+                  media="max-width: 767px"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/marketing-450.jpg   1x,
+                    ./images/mobile/marketing-900.jpg   2x,
+                    ./images//mobile/marketing-1350.jpg 3x
+                  "
+                  type="image/jpg"
+                  media="max-width: 767px"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/marketing-354.webp  1x,
+                    ./images/tablet/marketing-708.webp  2x,
+                    ./images/tablet/marketing-1062.webp 3x
+                  "
+                  type="image/webp"
+                  media="max-width: 1199px"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/marketing-354.jpg  1x,
+                    ./images/tablet/marketing-708.jpg  2x,
+                    ./images/tablet/marketing-1062.jpg 3x
+                  "
+                  type="image/jpg"
+                  media="max-width: 1199px"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/marketing-270.webp 1x,
+                    ./images/desktop/marketing-540.webp 2x,
+                    ./images/desktop/marketing-810.webp 3x
+                  "
+                  type="image/webp"
+                  media="min-width: 1200px"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/marketing-270.jpg,
+                    ./images/desktop/marketing-540.jpg,
+                    ./images/desktop/marketing-810.jpg
+                  "
+                  type="image/jpg"
+                  media="min-width: 1200px"
+                />
+                <img
+                  class="team__item-img"
+                  type="image/jpg"
+                  src="./images/desktop/marketing-270.jpg"
+                  alt="Микола Тарасов"
+                />
+              </picture>
               <div class="team__employee">
                 <h3 class="team__name feature-title">Микола Тарасов</h3>
                 <p class="team__developer">Marketing</p>
@@ -270,13 +470,66 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__item-img"
-                src="./images/img-4.jpg"
-                alt="Михайло Єрмаков"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/ui-450.webp  1x,
+                    ./images/mobile/ui-900.webp  2x,
+                    ./images/mobile/ui-1350.webp 3x
+                  "
+                  type="image/webp"
+                  media="(min-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/ui-450.jpg  1x,
+                    ./images/mobile/ui-900.jpg  2x,
+                    ./images/mobile/ui-1350.jpg 3x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/ui-354.webp  1x,
+                    ./images/tablet/ui-708.webp  2x,
+                    ./images/tablet/ui-1062.webp 3x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/ui-354.jpg  1x,
+                    ./images/tablet/ui-708.jpg  2x,
+                    ./images/tablet/ui-1062.jpg 3x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/ui-270.webp 1x,
+                    ./images/desktop/ui-540.webp 2x,
+                    ./images/desktop/ui-810.webp 3x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/ui-270.jpg 1x,
+                    ./images/desktop/ui-540.jpg 2x,
+                    ./images/desktop/ui-810.jpg 3x"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="team__item-img"
+                  src="./images/desktop/ui-270.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
               <div class="team__employee">
                 <h3 class="team__name feature-title">Михайло Єрмаков</h3>
                 <p class="team__developer">UI Designer</p>
